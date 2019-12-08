@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework: ERROR
+    com.gov: INFO
+spring:
+   jpa:
+     properties:
+       hibernate:
+         dialect: org.hibernate.dialect.PostgreSQLDialect
+     hibernate:
+       ddl-auto: update
+   datasource:
+     url: jdbc:postgresql://localhost:5432/accounts
+     username: postgres
+     password: password
+     initialization-mode: always
+     platform: postgres
