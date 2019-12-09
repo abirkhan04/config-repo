@@ -18,3 +18,9 @@ spring:
      password: password
      initialization-mode: always
      platform: postgres
+security:
+  oauth2:
+    client:
+      accessTokenUri: http://inv.grp.gov.bd:8011/auth-service/sec/master/authentication/v1/login
+      clientId: grp-web-portal
+      clientSecret: 123456
