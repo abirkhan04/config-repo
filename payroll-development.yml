@@ -5,11 +5,27 @@ logging:
   level:
     org.springframework: ERROR
     com.gov: INFO
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: b99d2ba2d54194ef4888
+      clientSecret: 7cc15e252d06c88f7bf6386013ae62b517d6a547
+      redirect_uri: http://localhost:8080
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      accessTokenUri: https://github.com/login/oauth/access_token
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user
 spring:
    jpa:
      properties:
        hibernate:
          dialect: org.hibernate.dialect.PostgreSQLDialect
+         jdbc:
+           lob:
+             non_contextual_creation: true
      hibernate:
        ddl-auto: update
    datasource:
