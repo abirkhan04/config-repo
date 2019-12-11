@@ -10,8 +10,8 @@ security:
     enabled: false
   oauth2:
     client:
-      clientId: b99d2ba2d54194ef4888
-      clientSecret: 7cc15e252d06c88f7bf6386013ae62b517d6a547
+      clientId: 0b8a0780fc464b904433
+      clientSecret: 9be445cacac27299ce50f0bc77db618a5daae1dd
       redirect_uri: http://localhost:8080
       userAuthorizationUri: https://github.com/login/oauth/authorize
       accessTokenUri: https://github.com/login/oauth/access_token
