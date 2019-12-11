@@ -2,11 +2,27 @@ logging:
   level:
     org.springframework: ERROR
     com.gov: INFO
+server:
+  port: 8080
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: b99d2ba2d54194ef4888
+      clientSecret: 7cc15e252d06c88f7bf6386013ae62b517d6a547
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user
 spring:
    jpa:
      properties:
        hibernate:
          dialect: org.hibernate.dialect.PostgreSQLDialect
+         jdbc:
+           lob:
+             non_contextual_creation: true
      hibernate:
        ddl-auto: update
    datasource:
@@ -14,11 +30,4 @@ spring:
      username: postgres
      password: password
      initialization-mode: always
-     platform: postgres
-
-security:
-  oauth2:
-    client:
-      accessTokenUri: http://inv.grp.gov.bd:8011/auth-service/sec/master/authentication/v1/login
-      clientId: grp-web-portal
-      clientSecret: 123456
+     platform: postgres  
