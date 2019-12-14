@@ -18,6 +18,8 @@ security:
     resource:
       userInfoUri: https://api.github.com/user
 spring:
+   application:
+     name: Chart Of Account Application
    jpa:
      properties:
        hibernate:
