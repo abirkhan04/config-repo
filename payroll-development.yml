@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8082
 
 logging:
   level:
@@ -12,13 +12,15 @@ security:
     client:
       clientId: 0b8a0780fc464b904433
       clientSecret: 9be445cacac27299ce50f0bc77db618a5daae1dd
-      redirect_uri: http://localhost:8080
+      redirect_uri: http://localhost:8082
       userAuthorizationUri: https://github.com/login/oauth/authorize
       accessTokenUri: https://github.com/login/oauth/access_token
       clientAuthenticationScheme: form
     resource:
       userInfoUri: https://api.github.com/user
 spring:
+   application:
+     name: Pay-Roll
    jpa:
      properties:
        hibernate:
