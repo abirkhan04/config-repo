@@ -9,15 +9,17 @@ security:
     enabled: false
   oauth2:
     client:
-      clientId: b99d2ba2d54194ef4888
-      clientSecret: 7cc15e252d06c88f7bf6386013ae62b517d6a547
-      userAuthorizationUri: https://github.com/login/oauth/authorize
-      accessTokenUri: https://github.com/login/oauth/access_token
+      clientId: clientapp
+      clientSecret: 123456
+      response_type: code
+      scope: read_profile_info
+      userAuthorizationUri: http://localhost:8085/oauth/authorize
+      accessTokenUri: http://localhost:8081/oauth/token
       clientAuthenticationScheme: form
       preEstablishedRedirectUri: http://localhost:8081/callback
       useCurrentUri: false
     resource:
-      userInfoUri: https://api.github.com/user
+      userInfoUri: http://localhost:8085/api/users/me
 spring:
    application:
      name: Chart-Of-Account-Application
