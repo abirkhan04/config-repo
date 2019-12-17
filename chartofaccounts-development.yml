@@ -14,7 +14,7 @@ security:
       response_type: code
       scope: read_profile_info
       userAuthorizationUri: http://localhost:8085/oauth/authorize
-      accessTokenUri: http://localhost:8081/oauth/token
+      accessTokenUri: http://localhost:8085/oauth/token
       clientAuthenticationScheme: form
       preEstablishedRedirectUri: http://localhost:8081/callback
       useCurrentUri: false
