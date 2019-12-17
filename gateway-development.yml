@@ -4,3 +4,12 @@ server:
 security:
   basic:
     enabled: false
+
+ribbon:
+  eureka:
+    enabled: false
+
+zuul:
+  routes:
+    chartofaccounts:
+      url: http://localhost:8081
