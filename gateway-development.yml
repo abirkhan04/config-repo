@@ -13,4 +13,5 @@ ribbon:
 zuul:
   routes:
     chartofaccounts:
+      sensitiveHeaders: Cookie,Set-Cookie
       url: http://localhost:8081
