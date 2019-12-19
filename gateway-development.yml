@@ -15,3 +15,6 @@ zuul:
     chartofaccounts:
       sensitiveHeaders: Cookie,Set-Cookie
       url: http://localhost:8081
+    oauth2client:
+      sensitiveHeaders: Cookie, Set-Cookie
+      url: http://localhost:9001
