@@ -17,7 +17,7 @@ security:
       userAuthorizationUri: http://localhost:8085/oauth/authorize
       accessTokenUri: http://localhost:8085/oauth/token
       clientAuthenticationScheme: form
-      preEstablishedRedirectUri: http://localhost:8081/callback
+      preEstablishedRedirectUri: http://localhost:9001/callback
       useCurrentUri: false
     resource:
       userInfoUri: http://localhost:8085/api/users/me
