@@ -10,14 +10,17 @@ security:
     enabled: false
   oauth2:
     client:
-      clientId: 0b8a0780fc464b904433
-      clientSecret: 9be445cacac27299ce50f0bc77db618a5daae1dd
-      redirect_uri: http://localhost:8082
-      userAuthorizationUri: https://github.com/login/oauth/authorize
-      accessTokenUri: https://github.com/login/oauth/access_token
+      clientId: clientapp
+      clientSecret: 123456
+      response_type: code
+      scope: read_profile_info
+      userAuthorizationUri: http://localhost:8085/oauth/authorize
+      accessTokenUri: http://localhost:8085/oauth/token
       clientAuthenticationScheme: form
+      preEstablishedRedirectUri: http://localhost:8081/callback
+      useCurrentUri: false
     resource:
-      userInfoUri: https://api.github.com/user
+      userInfoUri: http://localhost:8085/api/users/me
 spring:
    application:
      name: Pay-Roll
@@ -36,3 +39,7 @@ spring:
      password: password
      initialization-mode: always
      platform: postgres
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
