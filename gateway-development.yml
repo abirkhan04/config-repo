@@ -6,7 +6,7 @@ security:
     enabled: false
 
 ribbon:
-  ReadTimeout: 10000
+  ReadTimeout: 14,400,000
   eureka:
     enabled: false
 
