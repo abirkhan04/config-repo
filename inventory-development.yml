@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+logging:
+  level:
+    org.springframework: ERROR
+    com.gov: INFO
+spring:
+   application:
+     name: Pay-Roll
+   jpa:
+     properties:
+       hibernate:
+         dialect: org.hibernate.dialect.PostgreSQLDialect
+         jdbc:
+           lob:
+             non_contextual_creation: true
+     hibernate:
+       ddl-auto: update
+   datasource:
+     url: jdbc:postgresql://localhost:5432/accounts
+     username: postgres
+     password: password
+     initialization-mode: always
+     platform: postgres
