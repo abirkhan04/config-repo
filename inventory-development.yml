@@ -7,7 +7,7 @@ logging:
     com.gov: INFO
 spring:
    application:
-     name: Pay-Roll
+     name: Inventory
    jpa:
      properties:
        hibernate:
