@@ -21,3 +21,6 @@ zuul:
     payroll:
       sensitiveHeaders: Cookie, Set-Cookie
       url: http://localhost:8082
+    inventory:
+      sensitiveHeaders: Cookie, Set-Cookie
+      url: http://localhost:8083
