@@ -23,3 +23,6 @@ spring:
      password: password
      initialization-mode: always
      platform: postgres
+feign:
+  hystrix:
+    enabled: true
