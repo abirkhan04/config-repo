@@ -24,3 +24,6 @@ zuul:
     inventory:
       sensitiveHeaders: Cookie, Set-Cookie
       url: http://localhost:8083
+    accounts:
+      sensitiveHeaders: Cookie, Set-Cookie
+      url: http://localhost:8086
