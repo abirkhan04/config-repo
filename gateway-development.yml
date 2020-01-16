@@ -11,6 +11,9 @@ ribbon:
     enabled: false
 
 zuul:
+  ribbon:
+    eager-load:
+      enabled: true
   routes:
     chartofaccounts:
       sensitiveHeaders: Cookie,Set-Cookie
