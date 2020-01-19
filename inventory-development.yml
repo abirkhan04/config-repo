@@ -42,3 +42,5 @@ spring:
 feign:
   hystrix:
     enabled: true
+  httpClient:
+    enabled: true
