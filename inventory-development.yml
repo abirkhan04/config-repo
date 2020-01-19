@@ -41,6 +41,6 @@ spring:
      platform: postgres
 feign:
   hystrix:
-    enabled: true
+    enabled: false
   httpClient:
     enabled: true
