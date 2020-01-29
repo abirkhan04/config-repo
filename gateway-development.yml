@@ -30,3 +30,6 @@ zuul:
     accounts:
       sensitiveHeaders: Cookie, Set-Cookie
       url: http://localhost:8086
+    userrole:
+      sensitiveHeaders: Cookie, Set-Cookie
+      url: http://localhost:8084
