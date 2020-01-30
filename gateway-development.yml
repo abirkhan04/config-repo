@@ -33,3 +33,6 @@ zuul:
     userrole:
       sensitiveHeaders: Cookie, Set-Cookie
       url: http://localhost:8084
+    vattaxait:
+      sensitiveHeaders: Cookie, Set-Cookie
+      url: http://localhost:8087
