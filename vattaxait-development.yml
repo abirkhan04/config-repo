@@ -1,0 +1,45 @@
+server:
+  port: 8084
+
+logging:
+  level:
+    org.springframework: ERROR
+    com.gov: INFO
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      clientId: clientapp
+      clientSecret: 123456
+      response_type: code
+      scope: read_profile_info
+      userAuthorizationUri: http://localhost:8085/oauth/authorize
+      accessTokenUri: http://localhost:8085/oauth/token
+      clientAuthenticationScheme: form
+      preEstablishedRedirectUri: http://localhost:9001/callback
+      useCurrentUri: false
+    resource:
+      userInfoUri: http://localhost:8085/api/users/me
+spring:
+   application:
+     name: vat-tax-ait
+   jpa:
+     properties:
+       hibernate:
+         dialect: org.hibernate.dialect.PostgreSQLDialect
+         jdbc:
+           lob:
+             non_contextual_creation: true
+     hibernate:
+       ddl-auto: create
+   datasource:
+     url: jdbc:postgresql://localhost:5432/accounts
+     username: postgres
+     password: password
+     initialization-mode: always
+     platform: postgres
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
