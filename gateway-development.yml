@@ -36,3 +36,6 @@ zuul:
     vattaxait:
       sensitiveHeaders: Cookie, Set-Cookie
       url: http://localhost:8087
+    budget:
+      sensitiveHeaders: Cookie, Set-Cookie
+      url: http://localhost:8089
