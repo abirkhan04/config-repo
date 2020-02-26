@@ -23,7 +23,7 @@ security:
       userInfoUri: http://localhost:8085/api/users/me
 spring:
    application:
-     name: userrole
+     name: budget
    jpa:
      properties:
        hibernate:
