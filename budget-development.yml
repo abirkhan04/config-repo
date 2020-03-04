@@ -45,5 +45,5 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 
 ribbon:
-  ReadTimeout: 22980000
-  ConnectTimeout: 22980000
+  ReadTimeout: 2298000000
+  ConnectTimeout: 2298000000
